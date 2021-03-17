@@ -1,28 +1,3 @@
-'''
-class Student:
-  def __init__(self,name,age,form,email):
-    self.name = name
-    self.age = age
-    self.form = form
-    self.email = email
-    print("Data saved")
-  
-  def get_info(self):
-    print(f"Email: {self.name}")
-    print(f"Email: {self.age}")
-    print(f"Email: {self.form}")
-    print(f"Email: {self.email}")
-  
-  def send_email(self):
-    print(f"Email sent to {self.email}!")
-    print(f"Author: {self.name}")
-
-a_student = Student("Kenny",15,"11P","18koliver@buryedu.org")
-a_student.get_info()
-a_student.send_email()
-'''
-
-
 class Animal:
   def __init__(self,species_name,limbs,eyes,fur,sound):
     self.species_name = species_name
