@@ -6,7 +6,7 @@ class Animal:
     self.fur = fur
     self.sound = sound
     
-    if self.fur == "true":
+    if self.fur in ["yes","y"]:
       self.has_fur = "has"
     else:
       self.has_fur = "doesn\'t have"
@@ -25,7 +25,7 @@ print("-" * 30)
 species_name = input("What\'s its name?\n\t--> ")
 limbs = int(input("How many limbs does it have?\n\t--> "))
 eyes = int(input("How many eyes?\n\t--> "))
-fur = input("Does it have fur? [True] [False]\n\t--> ").lower()
+fur = input("Does it have fur? [Yes] [No]\n\t--> ").lower()
 sound = input("What sound does it make?\n\t--> ")
 print("-" * 30)
 
