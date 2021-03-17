@@ -1,3 +1,5 @@
+#====================
+from VividHues import Clr
 class Animal:
   def __init__(self,species_name,limbs,eyes,fur,tail,sound):
     self.species_name = species_name
@@ -18,23 +20,23 @@ class Animal:
       self.has_tail = "doesn\'t have"
   
   def describe(self):
-    print(f"You have created a {self.species_name}!")
-    print(f"\tIt has {self.limbs} limbs and {self.eyes} eyes.")
+    print(f"{Clr.BOLD}{Clr.GREEN}You have created a new animal species called \"{self.species_name}\"!{Clr.RESET}")
+    print(f"{Clr.CYAN}\tIt has {self.limbs} limbs and {self.eyes} eyes.")
     print(f"\tIt {self.has_fur} fur.")
     print(f"\tIt {self.has_tail} a tail.")
-    print(f"\tA {self.species_name} goes \"{self.sound}\"!")
+    print(f"\tA {self.species_name} goes {Clr.LIME}\"{self.sound}\"{Clr.CYAN}!{Clr.RESET}")
 #====================
 def create_animal():
   """ create an animal """
   
-  print("-" * 30)
-  species_name = input("What\'s its name?\n\t--> ")
-  limbs = int(input("How many limbs does it have?\n\t--> "))
-  eyes = int(input("How many eyes?\n\t--> "))
-  fur = input("Does it have fur? [Yes] [No]\n\t--> ").lower()
-  tail = input("Does it have a tail? [Yes] [No]\n\t--> ").lower()
-  sound = input("What sound does it make?\n\t--> ")
-  print("-" * 30)
+  print(Clr.BLACK + "-" * 30 + Clr.RESET)
+  species_name = input(Clr.YELLOW + "What will you call it?\n\t--> " + Clr.RESET)
+  limbs = int(input(f"{Clr.YELLOW}How many limbs does this \"{species_name}\" have?\n\t--> {Clr.RESET}"))
+  eyes = int(input(f"{Clr.YELLOW}How many eyes?\n\t--> {Clr.RESET}"))
+  fur = input(f"{Clr.YELLOW}Does your \"{species_name}\" have fur? [Yes] [No]\n\t--> {Clr.RESET}").lower()
+  tail = input(f"{Clr.YELLOW}A tail? [Yes] [No]\n\t--> {Clr.RESET}").lower()
+  sound = input(f"{Clr.YELLOW}What sound would a \"{species_name}\" make?\n\t--> {Clr.RESET}")
+  print(Clr.BLACK + "-" * 30 + Clr.RESET)
   
   new_species = Animal(species_name,limbs,eyes,fur,tail,sound)
   new_species.describe()
