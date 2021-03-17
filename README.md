@@ -1,4 +1,4 @@
-# animal-species-creator :star2:
+# animal-species-creator :unicorn:
 
 ![CodeFactor](https://www.codefactor.io/repository/github/KennyOliver/animal-species-creator/badge?style=for-the-badge)
 ![Latest SemVer](https://img.shields.io/github/v/tag/KennyOliver/animal-species-creator?label=version&sort=semver&style=for-the-badge)
