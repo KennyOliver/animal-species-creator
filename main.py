@@ -6,24 +6,28 @@ class Animal:
     self.fur = fur
     self.sound = sound
     
-    if fur is True:
-      self.has_fur = "Yes"
+    if self.fur == "true":
+      self.has_fur = "has"
     else:
-      self.has_fur = "No"
+      self.has_fur = "doesn\'t have"
   
   def describe(self):
-    print(f"I am a {self.species_name}. I have {self.limbs} limbs, {self.eyes} eyes.")
-    print(f"Do I have fur? {self.has_fur}")
-    print(f"A {self.species_name} goes {self.sound}!")
+    print(f"You have created a {self.species_name}!")
+    print(f"It has {self.limbs} limbs and {self.eyes} eyes.")
+    print(f"It {self.has_fur} fur.")
+    print(f"A {self.species_name} goes \"{self.sound}\"!")
 #====================
 # MAIN PROGRAM
+print("<-- Animal Species Creator -->")
 print("Let's make a new animal species!!!")
 
-species_name = input("What's its name?\n\t--> ")
+print("-" * 30)
+species_name = input("What\'s its name?\n\t--> ")
 limbs = int(input("How many limbs does it have?\n\t--> "))
-eyes = int(input("How many eyes\n\t--> "))
-fur = bool(input("Does it have fur? [True] [False]\n\t--> "))
+eyes = int(input("How many eyes?\n\t--> "))
+fur = input("Does it have fur? [True] [False]\n\t--> ").lower()
 sound = input("What sound does it make?\n\t--> ")
+print("-" * 30)
 
 new_species = Animal(species_name,limbs,eyes,fur,sound)
 new_species.describe()
