@@ -7,8 +7,9 @@
 
 [![repl](https://replit.com/badge/github/KennyOliver/animal-species-creator)](https://replit.com/@KennyOliver/animal-species-creator)
 
-Create imaginary animal species using OOP!
+**Create imaginary animal species using OOP!**
 
+## VividHues :rainbow: :package:
 **animal-species-creator** uses **VividHues** - my own Python Package!
 
 [![VividHues](https://img.shields.io/badge/Get%20VividHues-252525?style=for-the-badge&logo=python&logoColor=white&link=https://github.com/KennyOliver/VividHues)](https://github.com/KennyOliver/VividHues)
